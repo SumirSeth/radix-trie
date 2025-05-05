@@ -13,7 +13,7 @@ radix trie
                     [er]
               
 """
-class Node():
+class RadixNode():
     """
     Node: Represents a Node of a RadixTree
     """
@@ -25,7 +25,9 @@ class Node():
     def is_leaf(self):
         return True if self.children == {} else False
 
-
+class RadixTree():    
+    def __init__(self):
+        self.root = RadixNode()
 
 
 n = Node("Test")
